@@ -62,6 +62,7 @@ app.post("/uploadFiles", (req, res) => {
 
 app.post("/clearFileTable", (req, res) => {
     uploadedFiles = [];
+    fileCounterId = 0;
     res.redirect("/filemanager");
 });
 
