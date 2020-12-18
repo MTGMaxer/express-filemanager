@@ -1,0 +1,23 @@
+<div class="sidebar">
+    <h1>Filemanager</h1>
+    <form action="/clearFileTable" method="POST">
+        <input class="inputhref actionurl" type="submit" value="Remove file data from array">
+    </form>
+</div>
+<div class="filelist">
+    <table class="filetable">
+        <tr>
+            <th>Id</th>
+            <th>Extension</th>
+            <th>Name</th>
+            <th>Size</th>
+            <th>Type</th>
+            <th>-</th>
+            <th>-</th>
+            <th>-</th>
+        </tr>
+        {{#each files}}
+        {{> fileEntry}}
+        {{/each}}
+    </table>
+</div>

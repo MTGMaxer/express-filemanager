@@ -1,0 +1,29 @@
+<tr>
+    <td>
+        {{id}}
+    </td>
+    <td>
+        <img src="{{extImage name}}" alt="Extension image" class="extensionicon">
+    </td>
+    <td>
+        {{name}}
+    </td>
+    <td>
+        {{size}}
+    </td>
+    <td>
+        {{type}}
+    </td>
+    <td>
+        <form action="/deleteFile" method="POST">
+            <input type="hidden" name="fileid" value="{{id}}">
+            <input class="inputhref actionurl" type="submit" value="Delete">
+        </form>
+    </td>
+    <td>
+        <a href="/info?id={{id}}" class="actionurl">Info</a>
+    </td>
+    <td>
+        <a href="/downloadFile?id={{id}}" class="actionurl">Download</a>
+    </td>
+</tr>
