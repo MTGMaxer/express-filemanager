@@ -4,7 +4,6 @@ const bodyParser = require("body-parser");
 const formidable = require("formidable");
 const handlebars = require("express-handlebars");
 
-// TODO attribute
 const PORT = process.env.PORT || 3000;
 const app = express();
 
